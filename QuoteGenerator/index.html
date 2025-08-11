@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quote of the day</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="quote-box">
+    <h2>Quote of the day</h2>
+    <blockquote id="quote">Loading...</blockquote>
+    <span id="author">Loading...</span>
+    <div>
+      <button id="new-quote-btn">New Quote</button>
+      <button onclick="xPost()"><img src="Xicon.png" alt="xicon">Post</button>
+    </div>
+  </div>
+  <script>
+    var btn = document.getElementById("new-quote-btn");
+    var quote = document.getElementById("quote");
+    var author = document.getElementById("author");
+
+    btn.onclick = function () {
+      quote.innerHTML = "Loading...";
+      author.innerHTML = "";
+
+      fetch("https://api.api-ninjas.com/v1/quotes", {
+        headers: { "X-Api-Key": "XZKMtbvIl3jjzCyuuNaB+A==tDEdp4CO1Fyu9TrC" }
+      })
+        .then(res => res.json())
+        .then(data => {
+          quote.innerHTML = '"' + data[0].quote + '"';
+          author.innerHTML = data[0].author;
+        })
+        .catch(() => {
+          quote.innerHTML = "Could not load quote.";
+          author.innerHTML = "";
+        });
+    };
+
+
+    btn.click();
+
+    function xPost() {
+      window.open("https://x.com/intent/tweet?text=" + quote.innerHTML + "---- by " + author.innerHTML, "X Window", "width= 600,height = 300");
+    }
+
+  </script>
+
+
+</body>
+
+</html>
