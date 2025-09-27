@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.top {
+  padding-top: 20px;
+  width: 100%;
+  background-color: #1F2937;
+  color: #F9FAFB;
+  height: 20%;
+}
+
+.top nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.top nav h2 {
+  cursor: pointer;
+}
+
+.top nav ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.top nav ul li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.top nav ul li a {
+  text-decoration: none;
+  color: #F9FAFB;
+  transition: 0.4s;
+  border-bottom: 2px solid transparent;
+}
+
+.top nav ul li a:hover {
+  border-bottom: 2px solid #A6A6A6;
+}
+
+.top .topDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 70px 10%;
+}
+
+.top .topDiv .left {
+  width: 40%;
+}
+
+.top .topDiv .left p {
+  font-size: medium;
+}
+
+.top .topDiv .left h2 {
+  font-weight: 700;
+  font-size: larger;
+  color: #c0b9b9;
+  margin: 5px 0;
+}
+
+.top .topDiv .left button {
+  margin: 15px 0;
+  ;
+  padding: 4px 30px;
+  ;
+  border: none;
+  border-radius: 5px;
+  color: #F9FAFB;
+  font-weight: 500;
+  font-size: small;
+  background-color: #3B82F6;
+  cursor: pointer;
+}
+
+.top .topDiv .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 20px;
+}
+
+.top .topDiv .right img {
+  width: 100%;
+}
+
+.second {
+  min-height: 20%;
+  width: 100%;
+  margin: 20px 0;
+  padding: 5% 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.second h2 {
+  color: #1F2937;
+}
+
+.second div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.second div span img {
+  width: 150px;
+  margin: 10px 20px;
+  border-radius: 10px;
+  border: 3px solid #3B82F6;
+}
+
+.second div span p {
+  font-weight: 400;
+  color: #474a52;
+}
+
+
+.third div {
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10% 5%;
+  background-color: #E5E7EB;
+}
+
+.third div blockquote p {
+  font-size: larger;
+  font-weight: 500;
+  margin-bottom: 10px;
+  ;
+}
+
+.third div blockquote footer {
+  text-align: end;
+  font-weight: 600;
+  font-size: medium;
+  color: #374151;
+  ;
+}
+
+.four {
+  min-height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 8%;
+}
+
+.four div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #3B82F6;
+  width: 80%;
+  padding: 20px 10px;
+  ;
+  border-radius: 5px;
+}
+
+.four div .left {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 10%;
+}
+
+.four div .left .cta {
+  font-size: larger;
+  font-weight: 600;
+  color: #F9FAFB;
+
+}
+
+.four div .left p {
+  color: #F9FAFB;
+  font-size: smaller;
+}
+
+.four div .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.four div .right button {
+  padding: 5px 30px;
+  border: 2px solid #F9FAFB;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 600;
+  color: #F9FAFB;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  color: #F9FAFB;
+  background-color: #1F2937;
+}
