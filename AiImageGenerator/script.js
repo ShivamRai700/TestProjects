@@ -1,7 +1,7 @@
 const generateForm = document.querySelector(".generate-form");
 const imageGallery = document.querySelector(".image-gallery");
 
-const PEXELS_API_KEY = "your api key here"; 
+const PEXELS_API_KEY = "eMTTIh804r7Umc4hunUyA6z665Ij3u9u74UOlzhdHAJQuflm0q62yWg8"; 
 let isImageGenerating = false;
 
 const updateImageCard = (imgUrls) => {
